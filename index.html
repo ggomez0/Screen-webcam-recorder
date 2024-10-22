@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Screen Recorder with Webcam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Screen Recorder with Webcam</h1>
+    <div id="controls">
+      <button id="startBtn">Start Recording</button>
+      <button id="stopBtn" disabled>Stop Recording</button>
+    </div>
+    <div id="preview">
+      <video id="screenPreview" autoplay muted></video>
+      <video id="webcamPreview" autoplay muted></video>
+    </div>
+    <div id="recorded">
+      <h2>Recorded Video</h2>
+      <video id="recordedVideo" controls></video>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
